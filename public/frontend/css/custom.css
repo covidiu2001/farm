@@ -1,0 +1,187 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+.hidden {
+    display: none;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+    width: 200px !important;
+    background: #e6e6e6;
+    padding: 20px 0;
+}
+
+img.logo{
+    width: 150px;
+}
+
+#msgSubmit {
+    margin-top: 20px;
+}
+
+.mandatory{
+    color: #e02b27;
+    margin: 0 0 0 4.5px;
+}
+
+#formRegister .help-block.with-errors,
+#formRegisterUser .help-block.with-errors,
+#formLogin .help-block.with-errors,
+#orderForm .help-block.with-errors
+{
+    position: absolute;
+    right: 15px;
+    background: red;
+    color: #fff;
+    padding: 0px 15px;
+}
+
+.language-box{
+    float: right;
+    width: 90px;
+    background-color: #c6c6c6;
+}
+
+.language-box .form-control{
+    background: none;
+    border: none;
+}
+.language-box .bootstrap-select .btn-light{
+    padding: 4px;
+    font-size: 14px;
+    background: #b0b435;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+}
+.language-box .bootstrap-select .btn-light span{
+    padding: 2px;
+    line-height: 15px;
+}
+.language-box .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+.language-box .dropdown-item{
+	padding: 5px 10px;
+}
+.language-box .dropdown-menu.show{
+    top: 5px !important;
+    left: -10px !important;
+    width: auto !important;
+    min-width: 10px;
+    padding: 10px 20px;
+}
+.language-box .dropdown a{
+    color: #000000;
+}
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('/frontend/images/ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+
+/* margins */
+.mb-20 {
+    margin-bottom: 20px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+/* paddings */
+
+.review-form-box button, .a-button{
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+}
+.a-button:hover{
+    color: #ffffff;
+}
+.view-cart button{
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+body.on-side {
+    margin-left: -50px !important;
+}
+.side {
+    right: -300px;
+    width: 300px;
+    padding: 25px 10px;
+}
+ul.cart-list > li {
+    padding: 15px 10px 23px !important;
+}
+a.remove_from_cart:hover {
+    color: #1f1f1f;    
+}
+.table-responsive {
+    margin-top: 20px;
+}
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+    margin-left: 10px; 
+}
+.btn-theme {
+    color: #ffffff;
+    border: none;
+    border-radius: 0px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+.btn-theme:hover {
+    background: #b0b435;
+} 
+
+/* order details */
+.order-details h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.order-details td {
+    vertical-align: middle;
+}
+.order-details img {
+    width: 100px;
+    height: auto;
+}
+

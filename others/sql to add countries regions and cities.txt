@@ -1,0 +1,3375 @@
+
+/* countries */
+
+INSERT INTO `countries` (`id`, `name`) VALUES (NULL, 'România');
+
+
+/* regions */
+
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Alba');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Arad');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Argeș');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Bacău');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Bihor');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Bistrița-Năsăud');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Botoșani');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Brăila');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Brașov');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'București');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Buzău');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Călărași');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Caraș-Severin');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Cluj');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Constanța');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Covasna');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Dâmbovița');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Dolj');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Galați');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Giurgiu');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Gorj');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Harghita');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Hunedoara');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Iași');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Ialomița');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Ilfov');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Maramureș');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Mehedinți');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Mureș');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Neamț');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Olt');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Prahova');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Sălaj');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Satu Mare');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Sibiu');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Suceava');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Teleorman');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Timiș');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Tulcea');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Vâlcea');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Vaslui');
+INSERT INTO `regions` (`id`, `country_id`, `name`) VALUES (NULL, (SELECT id FROM `countries` WHERE name = 'România'), 'Vrancea');
+
+/* end regions */
+
+=======================
+
+/* cities */
+-- Alba --
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Abrud');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Aiud');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Albac');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Alba Iulia');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Almașu Mare');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Arieșeni');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Avram Iancu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Baia de Arieș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Berghin');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Bistra');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Blaj');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Blandiana');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Bucerdea Grânoasă');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Bucium');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Câlnic');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Câmpeni');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Cenade');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Cergău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Ceru-Băcăinți');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Cetatea de Baltă');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Ciugud');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Ciuruleasa');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Crăciunelu de Jos');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Cricău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Cugir');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Cut');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Daia Română');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Doștat');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Fărău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Galda de Jos');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Gârbova');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Gârda de Sus');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Hopârta');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Horea');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Ighiu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Întregalde');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Jidvei');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Livezile');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Lopadea Nouă');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Lunca Mureșului');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Lupșa');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Meteș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Mihalț');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Mirăslău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Mogoș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Noșlac');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Ocna Mureș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Ocoliș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Ohaba');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Pianu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Poiana Vadului');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Ponor');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Poșaga');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Rădești');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Râmeț');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Rimetea');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Roșia de Secaș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Roșia Montană');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Sălciua');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Săliștea');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Sâncel');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Sântimbru');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Săsciori');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Scărișoara');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Sebeș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Șibot');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Sohodol');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Șona');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Șpring');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Stremț');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Șugag');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Teiuș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Unirea');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Vadu Moților');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Valea Lungă');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Vidra');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Vințu de Jos');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Alba'), 'Zlatna');
+
+
+-- Cluj --
+
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Aghireșu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Aiton');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Aluniș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Apahida');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Așchileu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Baciu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Băișoara');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Beliș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Bobâlna');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Bonțida');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Borșa');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Buza');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Căianu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Călărași');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Călățele');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Cămărașu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Câmpia Turzii');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Căpușu Mare');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Cășeiu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Câțcău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Cătina');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Ceanu Mare');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Chinteni');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Chiuiești');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Ciucea');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Ciurila');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Cluj-Napoca');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Cojocna');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Cornești');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Cuzdrioara');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Dăbâca');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Dej');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Feleacu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Fizeșu Gherlii');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Florești');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Frata');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Gârbău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Geaca');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Gherla');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Gilău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Huedin');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Iara');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Iclod');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Izvoru Crișului');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Jichișu de Jos');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Jucu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Luna');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Măguri-Răcătău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Mănăstireni');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Mărgău');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Mărișel');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Mica');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Mihai Viteazu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Mintiu Gherlii');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Mociu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Moldovenești');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Negreni');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Pălatca');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Panticeu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Petreștii de Jos');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Ploscoș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Poieni');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Râșca');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Recea-Cristur');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Săcuieu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Sâncraiu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Săndulești');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Sânmartin');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Sânpaul');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Săvădisla');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Sic');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Suatu');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Țaga');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Tritenii de Jos');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Turda');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Tureni');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Unguraș');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Vad');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Valea Ierii');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Viișoara');
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Cluj'), 'Vultureni');
+
+-- Cluj --
+
+-- Arad --
+Almaș
+Apateu
+Arad
+Archiș
+Bârsa
+Bârzava
+Bata
+Beliu
+Birchiș
+Bocsig
+Brazii
+Buteni
+Cărand
+Cermei
+Chisindia
+Chișineu-Criș
+Conop
+Covăsânț
+Craiva
+Curtici
+Dezna
+Dieci
+Dorobanți
+Fântânele
+Felnac
+Frumușeni
+Ghioroc
+Grăniceri
+Gurahonț
+Hălmăgel
+Hălmagiu
+Hășmaș
+Ignești
+Ineu
+Iratoșu
+Lipova
+Livada
+Macea
+Mișca
+Moneasa
+Nădlac
+Olari
+Pâncota
+Păuliș
+Pecica
+Peregu Mare
+Petriș
+Pilu
+Pleșcuța
+Șagu
+Sântana
+Săvârșin
+Sebiș
+Secusigiu
+Șeitin
+Seleuș
+Semlac
+Șepreuș
+Șicula
+Șilindia
+Șimand
+Sintea Mare
+Șiria
+Șiștarovăț
+Socodor
+Șofronea
+Târnova
+Tauț
+Ususău (Dorgoş)
+Vărădia de Mureș
+Vârfurile
+Vinga
+Vladimirescu
+Zăbrani
+Zădăreni
+Zărand
+Zerind
+Zimandu Nou
+
+==============
+INSERT INTO `cities` (`id`, `region_id`, `name`) VALUES (NULL, (SELECT id FROM `regions` WHERE name = 'Arad'), 'Almaș');
+==============
+-- Arad --
+
+-- Argeș --
+Albeștii de Argeș
+Albeștii de Muscel
+Albota
+Aninoasa
+Arefu
+Băbana
+Băiculești
+Bălilești
+Bârla
+Bascov
+Beleți-Negrești
+Berevoești
+Bogați
+Boteni
+Boțești
+Bradu
+Brăduleț
+Budeasa
+Bughea de Jos
+Bughea de Sus
+Buzoești
+Căldăraru
+Călinești
+Câmpulung
+Căteasca
+Cepari
+Cetățeni
+Cicănești
+Ciofrângeni
+Ciomăgești
+Cocu
+Corbeni
+Corbi
+Coșești
+Costești
+Cotmeana
+Cuca
+Curtea de Argeș
+Dâmbovicioara
+Dârmănești
+Davidești
+Dobrești
+Domnești
+Drăganu
+Dragoslavele
+Godeni
+Hârsești
+Hârtiești
+Izvoru
+Leordeni
+Lerești
+Lunca Corbului
+Mălureni
+Mărăcineni
+Merișani
+Micești
+Mihăești
+Mioarele
+Mioveni (Colibaşi)
+Miroși
+Morărești
+Moșoaia
+Mozăceni
+Mușătești
+Negrași
+Nucșoara
+Oarja
+Pietroșani
+Pitești
+Poiana Lacului
+Poienarii de Argeș
+Poienarii de Muscel
+Popești
+Priboieni
+Râca
+Rătești
+Recea
+Rociu
+Rucăr
+Sălătrucu
+Săpata
+Schitu Golești
+Slobozia
+Stâlpeni
+Ștefan cel Mare
+Ștefănești (Florica)
+Stoenești
+Stolnici
+Șuici
+Suseni
+Teiu
+Tigveni
+Țițești
+Topoloveni
+Uda
+Ungheni
+Valea Danului
+Valea Iașului
+Valea Mare-Pravăț
+Vedea
+Vlădești
+Vulturești
+-- Argeș --
+
+-- Bacău --
+Agăș
+Ardeoani
+Asău
+Bacău
+Balcani
+Bârsănești
+Berești-Bistrița
+Berești-Tazlău
+Berzunți
+Blăgești
+Bogdănești
+Brusturoasa
+Buciumi
+Buhoci
+Buhuși
+Căiuți
+Cașin
+Cleja
+Colonești
+Comănești
+Corbasca
+Coțofănești
+Dămienești
+Dărmănești
+Dealu Morii
+Dofteana
+Faraoani
+Filipeni
+Filipești
+Găiceana
+Gârleni
+Ghimeș-Făget
+Gioseni
+Glăvănești
+Gura Văii
+Helegiu
+Hemeiuș
+Horgești
+Huruiești
+Itești
+Izvoru Berheciului
+Letea Veche
+Lipova
+Livezi
+Luizi-Călugăra
+Măgirești
+Măgura
+Mănăstirea Cașin
+Mărgineni
+Moinești
+Motoșeni
+Negri
+Nicolae Bălcescu
+Odobești
+Oituz
+Oncești
+Onești
+Orbeni
+Palanca
+Pâncești
+Parava
+Pârgărești
+Parincea
+Pârjol
+Plopana
+Poduri
+Podu Turcului
+Prăjești
+Răcăciuni
+Răchitoasa
+Racova
+Roșiori
+Sănduleni
+Sărata
+Sascut
+Săucești
+Scorțeni
+Secuieni
+Slănic-Moldova
+Solonț
+Stănișești
+Ștefan cel Mare
+Strugari
+Tamași
+Târgu Ocna
+Târgu Trotuș
+Tătărăști
+Traian
+Ungureni
+Urechești
+Valea Seacă
+Vultureni
+Zemeș
+-- Bacău --
+
+-- Bihor --
+Abram
+Abrămuț
+Aleșd
+Aștileu
+Aușeu
+Avram Iancu
+Balc
+Batăr
+Beiuș
+Biharia
+Boianu Mare
+Borod
+Borș
+Bratca
+Brusturi
+Budureasa
+Buduslău
+Bulz
+Buntești
+Căbești
+Câmpani
+Căpâlna
+Cărpinet
+Cefa
+Ceica
+Cetariu
+Cherechiu
+Chișlaz
+Ciuhoi
+Ciumeghiu
+Cociuba Mare
+Copăcel
+Criștioru de Jos
+Curățele
+Curtuișeni
+Derna
+Diosig
+Dobrești
+Drăgănești
+Drăgești
+Finiș
+Gepiu
+Girișu de Criș
+Hidișelu de Sus
+Holod
+Husasău de Tinca
+Ineu
+Lăzăreni
+Lazuri de Beiuș
+Lugașu de Jos
+Lunca
+Mădăras
+Măgești
+Marghita
+Nojorid
+Nucet
+Olcea
+Oradea
+Oșorhei
+Paleu
+Pietroasa
+Pocola
+Pomezeu
+Popești
+Răbăgani
+Remetea
+Rieni
+Roșia
+Roșiori
+Săcădat
+Săcueni
+Sălacea
+Sălard
+Salonta
+Sâmbăta
+Sânmartin
+Sânnicolau Român
+Sântandrei
+Sârbi
+Șimian
+Șinteu
+Șoimi
+Spinuș
+Ștei
+Șuncuiuș
+Suplacu de Barcău
+Tămășeu
+Tărcaia
+Tarcea
+Tăuteu
+Țețchea
+Tileagd
+Tinca
+Toboliu
+Tulca
+Uileacu de Beiuș
+Vadu Crișului
+Valea lui Mihai
+Vârciorog
+Vașcău
+Viișoara
+-- Bihor --
+
+-- Bistrița-Năsăud --
+Beclean
+Bistrița
+Bistrița Bârgăului
+Braniștea
+Budacu de Jos
+Budești
+Căianu Mic
+Cetate
+Chiochiș
+Chiuza
+Ciceu-Giurgești
+Ciceu-Mihăiești
+Coșbuc
+Dumitra
+Dumitrița
+Feldru
+Galații Bistriței
+Ilva Mare
+Ilva Mică
+Josenii Bârgăului
+Lechința
+Leșu
+Livezile
+Lunca Ilvei
+Măgura Ilvei
+Maieru
+Mărișelu
+Matei
+Miceștii de Câmpie
+Milaș
+Monor
+Năsăud
+Negrilești
+Nimigea
+Nușeni
+Parva
+Petru Rareș
+Poiana Ilvei
+Prundu Bârgăului
+Rebra
+Rebrișoara
+Rodna
+Romuli
+Runcu Salvei
+Salva
+Sângeorz-Băi
+Sânmihaiu de Câmpie
+Șanț
+Șieu
+Șieu-Măgheruș
+Șieu-Odorhei
+Șieuț
+Silivașu de Câmpie
+Șintereag
+Spermezeu
+Târlișua
+Teaca
+Telciu
+Tiha Bârgăului
+Uriu
+Urmeniș
+Zagra
+-- Bistrița-Năsăud --
+
+-- Botoșani --
+Adășeni
+Albești
+Avrămeni
+Bălușeni
+Blândești
+Botoșani
+Brăești
+Broscăuți
+Bucecea
+Călărași
+Cândești
+Concești
+Copălău
+Cordăreni
+Corlăteni
+Corni
+Coșula
+Coțușca
+Cristești
+Cristinești
+Curtești
+Dângeni
+Darabani
+Dersca
+Dimăcheni
+Dobârceni
+Dorohoi
+Drăgușeni
+Durnești
+Flămânzi
+Frumușica
+George Enescu
+Gorbănești
+Hănești
+Havârna
+Hilișeu-Horia
+Hlipiceni
+Hudești
+Ibănești
+Leorda
+Lozna
+Lunca
+Manoleasa
+Mihai Eminescu
+Mihăileni
+Mihălășeni
+Mileanca
+Mitoc
+Nicșeni
+Păltiniș
+Pomârla
+Prăjeni
+Răchiți
+Rădăuți-Prut
+Răuseni
+Ripiceni
+Roma
+Românești
+Santa Mare
+Săveni
+Șendriceni
+Stăuceni
+Ștefănești
+Știubieni
+Suharău
+Sulița
+Todireni
+Trușești
+Tudora
+Ungureni
+Unțeni
+Văculești
+Vârfu Câmpului
+Viișoara
+Vlădeni
+Vlăsinești
+Vorniceni
+Vorona
+-- Botoșani --
+
+-- Brăila --
+Bărăganul
+Berteștii de Jos
+Bordei Verde
+Brăila
+Cazasu
+Chiscani
+Ciocile
+Cireșu
+Dudești
+Făurei
+Frecăței
+Galbenu
+Gemenele
+Grădiștea
+Gropeni
+Ianca
+Însurăței
+Jirlău
+Mărașu
+Măxineni
+Mircea Vodă
+Movila Miresii
+Racovița
+Râmnicelu
+Romanu
+Roșiori
+Salcia Tudor
+Scorțaru Nou
+Siliștea
+Stăncuța
+Surdila-Găiseanca
+Surdila-Greci
+Șuțești
+Tichilești
+Traian
+Tudor Vladimirescu
+Tufești
+Ulmu
+Unirea
+Vădeni
+Victoria
+Vișani
+Viziru
+Zăvoaia
+-- Brăila --
+
+-- Brașov --
+Apața
+Augustin
+Beclean
+Bod
+Bran
+Brașov
+Budila
+Bunești
+Cața
+Cincu
+Codlea
+Comăna
+Cristian
+Crizbav
+Drăguș
+Dumbrăvița
+Făgăraș
+Feldioara
+Fundata
+Ghimbav
+Hălchiu
+Hărman
+Hârseni
+Hoghiz
+Holbav
+Homorod
+Jibert
+Lisa
+Măieruș
+Mândra
+Moieciu
+Ormeniș
+Părău
+Poiana Mărului
+Predeal
+Prejmer
+Racoș
+Râșnov
+Recea
+Rupea (Cohalm)
+Săcele
+Sâmbăta de Sus
+Sânpetru
+Șercaia
+Șinca
+Șinca Nouă
+Șoarș
+Tărlungeni
+Teliu
+Ticușu
+Ucea
+Ungra
+Vama Buzăului
+Victoria (Ucea Fabricii, Ucea Roşie, Ucea-Colonie)
+Viștea
+Voila
+Vulcan
+Zărnești
+-- Brașov --
+
+-- București --
+Sectorul 1
+Sectorul 2
+Sectorul 3
+Sectorul 4
+Sectorul 5
+Sectorul 6
+-- București --
+
+-- Buzău --
+Amaru
+Bălăceanu
+Balta Albă
+Beceni
+Berca
+Bisoca
+Blăjani
+Boldu
+Bozioru
+Brădeanu
+Brăești
+Breaza
+Buda
+Buzău
+Calvini
+Cănești
+C.A. Rosetti
+Cătina
+Cernătești
+Chiliile
+Chiojdu
+Cilibia
+Cislău
+Cochirleanca
+Colți
+Costești
+Cozieni
+Florica
+Gălbinași
+Gherăseni
+Ghergheasa
+Glodeanu Sărat
+Glodeanu-Siliștea
+Grebănu
+Gura Teghii
+Largu
+Lopătari
+Luciu
+Măgura
+Mânzălești
+Mărăcineni
+Mărgăritești
+Merei
+Mihăilești
+Movila Banului
+Murgești
+Năeni
+Nehoiu
+Odăile
+Padina
+Pănătău
+Pardoși
+Pârscov
+Pătârlagele
+Pietroasele
+Podgoria
+Pogoanele
+Poșta Câlnău
+Puiești
+Racovițeni
+Râmnicelu
+Râmnicu Sărat
+Robeasca
+Rușețu
+Săgeata
+Săhăteni
+Săpoca
+Sărulești
+Scorțoasa
+Scutelnici
+Siriu
+Smeeni
+Stâlpu
+Țintești
+Tisău
+Topliceni
+Ulmeni
+Unguriu
+Vadu Pașii
+Vâlcelele
+Valea Râmnicului
+Valea Salciei
+Vernești
+Vintilă Vodă
+Viperești
+Zărnești
+Ziduri
+-- Buzău --
+
+-- Călărași --
+Alexandru Odobescu
+Belciugatele
+Borcea
+Budești
+Călărași
+Căscioarele
+Chirnogi
+Chiselet
+Ciocănești
+Crivăț
+Curcani
+Cuza Vodă
+Dichiseni
+Dor Mărunt
+Dorobanțu
+Dragalina
+Dragoș Vodă
+Frăsinet
+Frumușani
+Fundeni
+Fundulea
+Gălbinași
+Grădiștea
+Gurbănești
+Ileana
+Independența
+Jegălia
+Lehliu
+Lehliu Gară
+Luica
+Lupșanu
+Mânăstirea
+Mitreni
+Modelu
+Nana
+Nicolae Bălcescu
+Oltenița
+Perișoru
+Plătărești
+Radovanu
+Roseți
+Sărulești
+Sohatu
+Șoldanu
+Spanțov
+Ștefan cel Mare
+Ștefan Vodă
+Tămădău Mare
+Ulmeni
+Ulmu
+Unirea
+Vâlcelele
+Valea Argovei
+Vasilați
+Vlad Țepeș
+-- Călărași --
+
+-- Caraș-Severin --
+Anina
+Armeniș
+Băile Herculane
+Bănia
+Băuțar
+Berliște
+Berzasca
+Berzovia
+Bocșa
+Bolvașnița
+Bozovici
+Brebu
+Brebu Nou
+Buchin
+Bucoșnița
+Caransebeș
+Carașova
+Cărbunari
+Ciclova Română
+Ciuchici
+Ciudanovița
+Constantin Daicoviciu
+Copăcele
+Cornea
+Cornereva
+Coronini
+Dalboșeț
+Doclin
+Dognecea
+Domașnea
+Eftimie Murgu
+Ezeriș
+Fârliug
+Forotic
+Gârnic
+Glimboca
+Goruia
+Grădinari
+Iablanița
+Lăpușnicel
+Lăpușnicu Mare
+Luncavița
+Lupac
+Marga
+Măureni
+Mehadia
+Mehadica
+Moldova Nouă
+Naidăș
+Obreja
+Ocna de Fier
+Oravița (Oraviţa Montană)
+Oțelu Roșu
+Păltiniș
+Pojejena
+Prigor
+Răcășdia
+Ramna
+Reșița
+Rusca Montană
+Sacu
+Sasca Montană
+Sichevița
+Slatina-Timiș
+Socol
+Șopotu Nou
+Târnova
+Teregova
+Ticvaniu Mare
+Topleț
+Turnu Ruieni
+Văliug
+Vărădia
+Vermeș
+Vrani
+Zăvoi
+Zorlențu Mare
+-- Caraș-Severin --
+
+
+
+-- Constanța --
+23 August
+Adamclisi
+Agigea
+Albești
+Aliman
+Amzacea
+Băneasa
+Bărăganu
+Castelu
+Cerchezu
+Cernavodă
+Chirnogeni
+Ciobanu
+Ciocârlia
+Cobadin
+Cogealac
+Comana
+Constanța
+Corbu
+Costinești
+Crucea
+Cumpăna
+Cuza Vodă
+Deleni
+Dobromir
+Dumbrăveni
+Eforie
+Fântânele
+Gârliciu
+Ghindărești
+Grădina
+Hârșova
+Horia
+Independența
+Ion Corvin
+Istria
+Limanu
+Lipnița
+Lumina
+Mangalia
+Medgidia
+Mereni
+Mihail Kogălniceanu
+Mihai Viteazu
+Mircea Vodă
+Murfatlar (Basarabi)
+Năvodari
+Negru Vodă
+Nicolae Bălcescu
+Oltina
+Ostrov
+Ovidiu
+Pantelimon
+Pecineaga
+Peștera
+Poarta Albă
+Rasova
+Săcele
+Saligny
+Saraiu
+Seimeni
+Siliștea
+Târgușor
+Techirghiol
+Topalu
+Topraisar
+Tortoman
+Tuzla
+Valu lui Traian
+Vulturu
+-- Constanța --
+
+-- Covasna --
+Aita Mare
+Arcuș
+Baraolt
+Barcani
+Bățani
+Belin
+Bixad
+Bodoc
+Boroșneu Mare
+Brăduț
+Brateș
+Brețcu
+Catalina
+Cernat
+Chichiș
+Comandău
+Covasna
+Dalnic
+Dobârlău
+Estelnic
+Ghelința
+Ghidfalău
+Hăghig
+Ilieni
+Întorsura Buzăului
+Lemnia
+Malnaș
+Mereni
+Micfalău
+Moacșa
+Ojdula
+Ozun
+Poian
+Reci
+Sânzieni
+Sfântu Gheorghe
+Sita Buzăului
+Târgu Secuiesc
+Turia
+Vâlcele
+Valea Crișului
+Valea Mare
+Vârghiș
+Zăbala
+Zagon
+-- Covasna --
+
+-- Dâmbovița --
+Aninoasa
+Băleni
+Bărbulețu
+Bezdead
+Bilciurești
+Brănești
+Braniștea
+Brezoaele
+Buciumeni
+Bucșani
+Butimanu
+Cândești
+Ciocănești
+Cobia
+Cojasca
+Comișani
+Conțești
+Corbii Mari
+Cornățelu
+Cornești
+Costeștii din Vale
+Crângurile
+Crevedia
+Dărmănești
+Dobra
+Doicești
+Dragodana
+Dragomirești
+Fieni
+Finta
+Găești
+Glodeni
+Gura Foii
+Gura Ocniței
+Gura Șuții
+Hulubești
+Iedera
+I. L. Caragiale
+Lucieni
+Ludești
+Lungulețu
+Malu cu Flori
+Mănești
+Mătăsaru
+Mogoșani
+Moreni
+Moroeni
+Morteni
+Moțăieni
+Niculești
+Nucet
+Ocnița
+Odobești
+Perșinari
+Petrești
+Pietrari
+Pietroșița
+Poiana
+Potlogi
+Produlești
+Pucheni
+Pucioasa
+Răcari
+Raciu
+Răscăeți
+Râu Alb
+Răzvad
+Runcu
+Sălcioara
+Șelaru
+Slobozia Moară
+Șotânga
+Târgoviște
+Tărtășești
+Tătărani
+Titu
+Uliești
+Ulmi
+Văcărești
+Valea Lungă
+Valea Mare
+Văleni-Dâmbovița
+Vârfuri
+Vișina
+Vișinești
+Vlădeni
+Voinești
+Vulcana-Băi
+Vulcana-Pandele
+-- Dâmbovița --
+
+-- Dolj --
+Afumați
+Almăj
+Amărăștii de Jos
+Amărăștii de Sus
+Apele Vii
+Argetoaia
+Băilești
+Bârca
+Bechet
+Bistreț
+Botoșești-Paia
+Brabova
+Brădești
+Braloștița
+Bratovoești
+Breasta
+Bucovăț
+Bulzești
+Calafat
+Călărași
+Calopăr
+Caraula
+Cârcea
+Cârna
+Carpen
+Castranova
+Catane
+Celaru
+Cerăt
+Cernătești
+Cetate
+Cioroiași
+Ciupercenii Noi
+Coșoveni
+Coțofenii din Dos
+Coțofenii din Față
+Craiova
+Dăbuleni
+Daneți
+Desa
+Dioști
+Dobrești
+Dobrotești
+Drăgotești
+Drănic
+Fărcaș
+Filiași
+Galicea Mare
+Galiciuica
+Gângiova
+Ghercești
+Ghidici
+Ghindeni
+Gighera
+Giubega
+Giurgița
+Gogoșu
+Goicea
+Goiești
+Grecești
+Întorsura
+Ișalnița
+Izvoare
+Leu
+Lipovu
+Măceșu de Jos
+Măceșu de Sus
+Maglavit
+Malu Mare
+Mârșani
+Melinești
+Mischii
+Moțăței
+Murgași
+Negoi
+Orodel
+Ostroveni
+Perișor
+Pielești
+Piscu Vechi
+Plenița
+Pleșoi
+Podari
+Poiana Mare
+Predești
+Radovan
+Rast
+Robănești
+Rojiște
+Sadova
+Sălcuța
+Scăești
+Seaca de Câmp
+Seaca de Pădure
+Secu
+Segarcea
+Siliștea Crucii
+Șimnicu de Sus
+Sopot
+Tălpaș
+Teasc
+Terpezița
+Teslui
+Țuglui
+Unirea
+Urzicuța
+Valea Stanciului
+Vârtop
+Vârvoru de Jos
+Vela
+Verbița
+-- Dolj --
+
+-- Galați --
+Bălăbănești
+Bălășești
+Băleni
+Băneasa
+Barcea
+Berești
+Berești-Meria
+Brăhășești
+Braniștea
+Buciumeni
+Cavadinești
+Cerțești
+Corni
+Corod
+Cosmești
+Costache Negri
+Cuca
+Cudalbi
+Cuza Vodă
+Drăgănești
+Drăgușeni
+Fârțănești
+Foltești
+Frumușița
+Fundeni
+Galați
+Ghidigeni
+Gohor
+Grivița
+Independența
+Ivești
+Jorăști
+Liești
+Măstăcani
+Matca
+Movileni
+Munteni
+Nămoloasa
+Negrilești
+Nicorești
+Oancea
+Pechea
+Piscu
+Poiana
+Priponești
+Rădești
+Rediu
+Scânteiești
+Schela
+Șendreni
+Slobozia Conachi
+Smârdan
+Smulți
+Suceveni
+Suhurlui
+Târgu Bujor
+Tecuci
+Țepu
+Tudor Vladimirescu
+Tulucești
+Umbrărești
+Valea Mărului
+Vânători
+Vârlezi
+Vlădești
+-- Galați --
+
+-- Giurgiu --
+Adunații-Copăceni
+Băneasa
+Bolintin-Deal
+Bolintin-Vale
+Bucșani
+Bulbucata
+Buturugeni
+Călugăreni
+Clejani
+Colibași
+Comana
+Cosoba
+Crevedia Mare
+Daia
+Florești-Stoenești
+Frătești
+Găiseni
+Găujani
+Ghimpați
+Giurgiu
+Gogoșari
+Gostinari
+Gostinu
+Grădinari
+Greaca
+Herăști
+Hotarele
+Iepurești
+Isvoarele
+Izvoarele
+Joița
+Letca Nouă
+Malu
+Mârșa
+Mihai Bravu
+Mihăilești
+Ogrezeni
+Oinacu
+Prundu
+Putineiu
+Răsuceni
+Roata de Jos
+Săbăreni
+Schitu
+Singureni
+Slobozia
+Stănești
+Stoenești
+Toporu
+Ulmi
+Valea Dragului
+Vânătorii Mici
+Vărăști
+Vedea
+-- Giurgiu --
+
+-- Gorj --
+Albeni
+Alimpești
+Aninoasa
+Arcani
+Baia de Fier
+Bălănești
+Bălești
+Bâlteni
+Bărbătești
+Bengești-Ciocadia
+Berlești
+Bolboși
+Borăscu
+Brănești
+Bumbești-Jiu
+Bumbești-Pițic
+Bustuchin
+Câlnic
+Căpreni
+Cătunele
+Ciuperceni
+Crasna
+Crușeț
+Dănciulești
+Dănești
+Drăgotești
+Drăguțești
+Fărcășești
+Glogova
+Godinești
+Hurezani
+Ionești
+Jupânești
+Lelești
+Licurici
+Logrești
+Mătăsari
+Motru
+Mușetești
+Negomir
+Novaci
+Padeș
+Peștișani
+Plopșoru
+Polovragi
+Prigoria
+Roșia de Amaradia
+Rovinari
+Runcu
+Săcelu
+Samarinești
+Săulești
+Schela
+Scoarța
+Slivilești
+Stănești
+Stejari
+Stoina
+Țânțăreni
+Târgu Cărbunești
+Târgu Jiu
+Telești
+Țicleni
+Tismana
+Turburea
+Turceni
+Turcinești
+Urdari
+Văgiulești
+Vladimir
+-- Gorj --
+
+-- Harghita --
+Atid
+Avrămești
+Băile Tușnad
+Bălan
+Bilbor
+Borsec
+Brădești
+Căpâlnița
+Cârța
+Ciceu
+Ciucsângeorgiu
+Ciumani
+Corbu
+Corund
+Cozmeni
+Cristuru Secuiesc
+Dănești
+Dârjiu
+Dealu
+Ditrău
+Feliceni
+Frumoasa
+Gălăuțaș
+Gheorgheni
+Joseni
+Lăzarea
+Leliceni
+Lueta
+Lunca de Jos
+Lunca de Sus
+Lupeni
+Mădăraș
+Mărtiniș
+Merești
+Miercurea Ciuc
+Mihăileni
+Mugeni
+Ocland
+Odorheiu Secuiesc
+Păuleni-Ciuc
+Plăieșii de Jos
+Porumbeni
+Praid
+Racu
+Remetea
+Săcel
+Sâncrăieni
+Sândominic
+Sânmartin
+Sânsimion
+Sântimbru
+Sărmaș
+Satu Mare
+Secuieni
+Siculeni
+Șimonești
+Subcetate
+Suseni
+Tomești
+Toplița
+Tulgheș
+Tușnad
+Ulieș
+Vărșag
+Vlăhița
+Voșlăbeni
+Zetea
+-- Harghita --
+
+-- Hunedoara --
+Aninoasa
+Băcia
+Baia de Criș
+Băița
+Balșa
+Bănița
+Baru
+Bătrâna
+Beriu
+Blăjeni
+Boșorod
+Brad
+Brănișca
+Bretea Română
+Buceș
+Bucureșci
+Bulzeștii de Sus
+Bunila
+Burjuc
+Călan
+Cârjiți
+Cerbăl
+Certeju de Sus
+Crișcior
+Densuș
+Deva
+Dobra
+General Berthelot
+Geoagiu
+Ghelari
+Gurasada
+Hărău
+Hațeg
+Hunedoara
+Ilia
+Lăpugiu de Jos
+Lelese
+Lunca Cernii de Jos
+Luncoiu de Jos
+Lupeni
+Mărtinești
+Orăștie
+Orăștioara de Sus
+Pestișu Mic
+Petrila
+Petroșani
+Pui
+Răchitova
+Rapoltu Mare
+Râu de Mori
+Ribița
+Romos
+Sălașu de Sus
+Sântămăria-Orlea
+Sarmizegetusa
+Simeria
+Șoimuș
+Teliucu Inferior
+Tomești
+Toplița
+Totești
+Turdaș
+Uricani
+Vălișoara
+Vața de Jos
+Vețel
+Vorța
+Vulcan
+Zam
+-- Hunedoara --
+
+-- Iași --
+Alexandru Ioan Cuza (Viișoara)
+Andrieșeni
+Aroneanu
+Balș
+Bălțați
+Bârnova
+Belcești
+Bivolari
+Brăești
+Butea
+Ceplenița
+Ciohorăni
+Ciortești
+Ciurea
+Coarnele Caprei
+Comarna
+Costești
+Costuleni
+Cotnari
+Cozmești
+Cristești
+Cucuteni
+Dagâța
+Deleni
+Dobrovăț
+Dolhești
+Drăgușeni
+Dumești
+Erbiceni
+Fântânele
+Focuri
+Golăiești
+Gorban
+Grajduri
+Gropnița
+Grozești
+Hălăucești
+Hârlău
+Hărmănești
+Heleșteni
+Holboca
+Horlești
+Iași
+Ion Neculce
+Ipatele
+Lespezi
+Lețcani
+Lungani
+Mădârjac
+Mircești
+Mironeasa
+Miroslava
+Miroslovești
+Mogoșești
+Mogoșești-Siret
+Moșna
+Moțca
+Movileni
+Oțeleni
+Pașcani
+Plugari
+Podu Iloaiei
+Popești
+Popricani
+Prisăcani
+Probota
+Răchiteni
+Răducăneni
+Rediu
+Românești
+Roșcani
+Ruginoasa
+Scânteia
+Șcheia
+Schitu Duca
+Scobinți
+Sinești
+Șipote
+Sirețel
+Stolniceni-Prăjescu
+Strunga
+Tansa
+Târgu Frumos
+Tătăruși
+Țibana
+Țibănești
+Țigănași
+Todirești
+Tomești
+Trifești
+Țuțora
+Ungheni
+Valea Lupului
+Valea Seacă
+Vânători
+Victoria
+Vlădeni
+Voinești
+-- Iași --
+
+-- Ialomița --
+Adâncata
+Albești
+Alexeni
+Amara
+Andrășești
+Armășești
+Axintele
+Balaciu
+Bărbulești
+Bărcănești
+Borănești
+Bordușani
+Bucu
+Buești
+Căzănești
+Ciocârlia
+Ciochina
+Ciulnița
+Cocora
+Colelia
+Cosâmbești
+Coșereni
+Drăgoești
+Dridu
+Făcăeni
+Fetești
+Fierbinți-Târg
+Gârbovi
+Gheorghe Doja
+Gheorghe Lazăr
+Giurgeni
+Grindu
+Grivița
+Gura Ialomiței
+Ion Roată
+Jilavele
+Maia
+Manasia
+Mărculești
+Mihail Kogălniceanu
+Miloșești
+Moldoveni
+Movila
+Movilița
+Munteni-Buzău
+Ograda
+Perieți
+Platonești
+Rădulești (Brazii)
+Reviga
+Roșiori
+Sălcioara
+Sărățeni
+Săveni
+Scânteia
+Sfântu Gheorghe
+Sinești
+Slobozia
+Stelnica
+Sudiți
+Țăndărei
+Traian
+Urziceni
+Valea Ciorii
+Valea Măcrișului
+Vlădeni
+-- Ialomița --
+
+-- Ilfov --
+1 Decembrie
+Afumați
+Balotești
+Berceni
+Bragadiru
+Brănești
+Buftea
+Cernica
+Chiajna
+Chitila
+Ciolpani
+Ciorogârla
+Clinceni
+Copăceni
+Corbeanca
+Cornetu
+Dărăști-Ilfov
+Dascălu
+Dobroești
+Domnești
+Dragomirești-Vale
+Găneasa
+Glina
+Grădiștea
+Gruiu
+Jilava
+Măgurele
+Moara Vlăsiei
+Mogoșoaia
+Nuci
+Otopeni
+Pantelimon
+Periș
+Petrăchioaia
+Popești-Leordeni
+Snagov
+Ștefăneștii de Jos
+Tunari
+Vidra
+Voluntari
+-- Ilfov --
+
+-- Maramureș --
+Ardusat
+Ariniș
+Asuaju de Sus
+Baia Mare
+Baia Sprie
+Băița de sub Codru
+Băiuț
+Bârsana
+Băsești
+Bicaz
+Bistra
+Bocicoiu Mare
+Bogdan Vodă
+Boiu Mare
+Borșa
+Botiza
+Budești
+Călinești
+Câmpulung la Tisa
+Cavnic
+Cernești
+Cicârlău
+Coaș
+Coltău
+Copalnic-Mănăștur
+Coroieni
+Cupșeni
+Desești
+Dragomirești
+Dumbrăvița
+Fărcașa
+Gârdani
+Giulești
+Groși
+Groșii Țibleșului
+Ieud
+Lăpuș
+Leordina
+Mireșu Mare
+Moisei
+Oarța de Jos
+Ocna Șugatag
+Oncești
+Petrova
+Poienile de sub Munte
+Poienile Izei
+Recea
+Remetea Chioarului
+Remeți
+Repedea
+Rona de Jos
+Rona de Sus
+Rozavlea
+Ruscova
+Săcălășeni
+Săcel
+Săliștea de Sus
+Sălsig
+Săpânța
+Sarasău
+Satulung
+Seini
+Șieu
+Sighetu Marmației
+Șișești
+Șomcuta Mare
+Strâmtura
+Suciu de Sus
+Târgu Lăpuș
+Tăuții-Măgherăuș
+Ulmeni
+Vadu Izei
+Valea Chioarului
+Vima Mică
+Vișeu de Jos
+Vișeu de Sus
+-- Maramureș --
+
+-- Mehedinți --
+Bâcleș
+Baia de Aramă
+Bala
+Bălăcița
+Balta
+Bâlvănești
+Braniștea
+Breznița-Motru
+Breznița-Ocol
+Broșteni
+Burila Mare
+Butoiești
+Căzănești
+Cireșu
+Corcova
+Corlățel
+Cujmir
+Dârvari
+Devesel
+Drobeta-Turnu Severin
+Dubova
+Dumbrava
+Eșelnița
+Florești
+Gârla Mare
+Godeanu
+Gogoșu
+Greci
+Grozești
+Gruia
+Hinova
+Husnicioara
+Ilovăț
+Ilovița
+Isverna
+Izvoru Bârzii
+Jiana
+Livezile
+Malovăț
+Obârșia-Cloșani
+Obârșia de Câmp
+Oprișor
+Orșova
+Pădina Mare
+Pătulele
+Podeni
+Ponoarele
+Poroina Mare
+Pristol
+Prunișor
+Punghina
+Rogova
+Salcia
+Șimian
+Șișești
+Șovarna
+Stângăceaua
+Strehaia
+Svinița
+Tâmna
+Vânători
+Vânjuleț
+Vânju Mare
+Vlădaia
+Voloiac
+Vrata
+-- Mehedinți --
+
+-- Mureș --
+Acățari
+Adămuș
+Albești
+Aluniș
+Apold
+Ațintiș
+Băgaciu
+Bahnea
+Băla
+Bălăușeri
+Band
+Batoș
+Beica de Jos
+Bereni
+Bichiș
+Bogata
+Brâncovenești
+Breaza
+Ceuașu de Câmpie
+Chețani
+Chibed
+Chiheru de Jos
+Coroisânmărtin
+Corunca
+Cozma
+Crăciunești
+Crăiești
+Cristești
+Cucerdea
+Cuci
+Daneș
+Deda
+Eremitu
+Ernei
+Fântânele
+Fărăgău
+Gălești
+Gănești
+Gheorghe Doja
+Ghindari
+Glodeni
+Gornești
+Grebenișu de Câmpie
+Gurghiu
+Hodac
+Hodoșa
+Ibănești
+Iclănzel
+Ideciu de Jos
+Iernut
+Livezeni
+Luduș
+Lunca
+Lunca Bradului
+Mădăraș
+Măgherani
+Mica
+Miercurea Nirajului
+Miheșu de Câmpie
+Nadeș
+Neaua
+Ogra
+Pănet
+Papiu Ilarian
+Păsăreni
+Petelea
+Pogăceaua
+Râciu
+Răstolița
+Reghin
+Rușii-Munți
+Sâncraiu de Mureș
+Sângeorgiu de Mureș
+Sângeorgiu de Pădure
+Sânger
+Sânpaul
+Sânpetru de Câmpie
+Sântana de Mureș
+Sărățeni
+Sărmașu
+Saschiz
+Șăulia
+Sighișoara
+Șincai
+Solovăstru
+Sovata
+Stânceni
+Suplac
+Suseni
+Târgu Mureș
+Târnăveni (Diciosânmartin)
+Tăureni
+Ungheni (Niraşteu)
+Valea Largă
+Vânători
+Vărgata
+Vătava
+Vețca
+Viișoara
+Voivodeni
+Zagăr
+Zau de Câmpie
+-- Mureș --
+
+-- Neamț --
+Agapia
+Alexandru cel Bun
+Bahna
+Bălțătești
+Bâra
+Bârgăuani
+Bicaz
+Bicaz-Chei
+Bicazu Ardelean
+Bodești
+Boghicea
+Borca
+Borlești
+Botești
+Bozieni
+Brusturi
+Cândești
+Ceahlău
+Cordun
+Costișa
+Crăcăoani
+Dămuc
+Dobreni
+Dochia
+Doljești
+Drăgănești
+Dragomirești
+Dulcești
+Dumbrava Roșie
+Farcașa
+Făurei
+Gâdinți
+Gârcina
+Gherăești
+Ghindăoani
+Girov
+Grințieș
+Grumăzești
+Hangu
+Horia
+Icușești
+Ion Creangă
+Mărgineni
+Moldoveni
+Negrești
+Oniceni
+Pâncești
+Pângărați
+Păstrăveni
+Petricani
+Piatra Neamț
+Piatra Șoimului
+Pipirig
+Podoleni
+Poiana Teiului
+Poienari
+Răucești
+Războieni
+Rediu
+Roman
+Români
+Roznov
+Ruginoasa
+Săbăoani
+Sagna
+Săvinești
+Secuieni
+Stănița
+Ștefan cel Mare
+Tămășeni
+Tarcău
+Târgu Neamț
+Tașca
+Tazlău
+Țibucani
+Timișești
+Trifești
+Tupilați
+Urecheni
+Valea Ursului
+Văleni
+Vânători-Neamț
+Zănești
+-- Neamț --
+
+-- Olt --
+Băbiciu
+Baldovinești
+Balș
+Bălteni
+Bărăști
+Bârza
+Bobicești
+Brâncoveni
+Brastavățu
+Brebeni
+Bucinișu
+Călui
+Caracal
+Cârlogani
+Cezieni
+Cilieni
+Colonești
+Corabia
+Corbu
+Coteana
+Crâmpoia
+Cungrea
+Curtișoara
+Dăneasa
+Deveselu
+Dobrețu
+Dobrosloveni
+Dobroteasa
+Dobrun
+Drăgănești-Olt
+Drăghiceni
+Făgețelu
+Fălcoiu
+Fărcașele
+Găneasa
+Gârcov
+Găvănești
+Ghimpețeni
+Giuvărăști
+Gostavățu
+Grădinari
+Grădinile
+Grojdibodu
+Gura Padinii
+Ianca
+Iancu Jianu
+Icoana
+Ipotești
+Izbiceni
+Izvoarele
+Leleasca
+Mărunței
+Mihăești
+Milcov
+Morunglav
+Movileni
+Nicolae Titulescu
+Obârșia
+Oboga
+Oporelu
+Optași-Măgura
+Orlea
+Osica de Jos
+Osica de Sus
+Pârșcoveni
+Perieți
+Piatra-Olt
+Pleșoiu
+Poboru
+Potcoava
+Priseaca
+Radomirești
+Redea
+Rotunda
+Rusănești
+Sâmburești
+Sârbii-Măgura
+Scărișoara
+Schitu
+Scornicești
+Seaca
+Șerbănești
+Slatina
+Slătioara
+Șopârlița
+Spineni
+Sprâncenata
+Ștefan cel Mare
+Stoenești
+Stoicănești
+Strejești
+Studina
+Tătulești
+Teslui
+Tia Mare
+Topana
+Traian
+Tufeni
+Urzica
+Vădastra
+Vădăstrița
+Vâlcele
+Valea Mare
+Văleni
+Verguleasa
+Vișina
+Vișina Nouă
+Vitomirești
+Vlădila
+Voineasa
+Vulpeni
+Vulturești
+-- Olt --
+
+-- Prahova --
+Adunați
+Albești-Paleologu
+Aluniș
+Apostolache
+Ariceștii Rahtivani
+Ariceștii Zeletin
+Azuga
+Baba Ana
+Băicoi
+Balta Doamnei
+Bălțești
+Bănești
+Bărcănești
+Bătrâni
+Berceni
+Bertea
+Blejoi
+Boldești-Grădiștea
+Boldești-Scăeni
+Brazi
+Breaza
+Brebu
+Bucov
+Bușteni
+Călugăreni
+Câmpina
+Cărbunești
+Ceptura
+Cerașu
+Chiojdeanca
+Ciorani
+Cocorăștii Colț
+Cocorăștii Mislii
+Colceag
+Comarnic
+Cornu
+Cosminele
+Drăgănești
+Drajna
+Dumbrava
+Dumbrăvești
+Fântânele
+Filipeștii de Pădure
+Filipeștii de Târg
+Florești
+Fulga
+Gherghița
+Gorgota
+Gornet
+Gornet-Cricov
+Gura Vadului
+Gura Vitioarei
+Iordăcheanu
+Izvoarele
+Jugureni
+Lapoș
+Lipănești
+Măgurele
+Măgureni
+Măneciu
+Mănești
+Mizil
+Olari
+Păcureți
+Păulești
+Ploiești
+Plopeni
+Plopu
+Podenii Noi
+Poiana Câmpina
+Poienarii Burchii
+Posești
+Predeal-Sărari
+Provița de Jos
+Provița de Sus
+Puchenii Mari
+Râfov
+Salcia
+Sălciile
+Sângeru
+Scorțeni
+Secăria
+Sinaia
+Șirna
+Slănic
+Șoimari
+Șotrile
+Starchiojd
+Ștefești
+Surani
+Talea
+Târgșoru Vechi
+Tătaru
+Teișani
+Telega
+Tinosu
+Tomșani
+Urlați
+Vadu Săpat
+Vâlcănești
+Valea Călugărească
+Valea Doftanei
+Vălenii de Munte
+Vărbilău
+-- Prahova --
+
+-- Sălaj --
+Agrij
+Almașu
+Băbeni
+Bălan
+Bănișor
+Benesat
+Bobota
+Bocșa
+Boghiș
+Buciumi
+Camăr
+Carastelec
+Cehu Silvaniei
+Chieșd
+Cizer
+Coșeiu
+Crasna
+Creaca
+Crișeni
+Cristolț
+Cuzăplac
+Dobrin
+Dragu
+Fildu de Jos
+Gâlgău
+Gârbou
+Halmășd
+Hereclean
+Hida
+Horoatu Crasnei
+Ileanda
+Ip
+Jibou
+Letca
+Lozna
+Măeriște
+Marca
+Meseșenii de Jos
+Mirșid
+Năpradea
+Nușfalău
+Pericei
+Plopiș
+Poiana Blenchii
+Românași
+Rus
+Sâg
+Sălățig
+Șamșud
+Sânmihaiu Almașului
+Sărmășag
+Șimișna
+Șimleu Silvaniei
+Someș-Odorhei
+Surduc
+Treznea
+Valcău de Jos
+Vârșolț
+Zalău
+Zalha
+Zimbor
+-- Sălaj --
+
+-- Satu Mare --
+Acâș
+Agriș
+Andrid
+Apa
+Ardud
+Bârsău
+Bătarci
+Beltiug
+Berveni
+Bixad
+Bogdand
+Botiz
+Călinești-Oaș
+Cămărzana
+Cămin
+Căpleni
+Carei
+Căuaș
+Cehal
+Certeze
+Ciumești
+Craidorolț
+Crucișor
+Culciu
+Doba
+Dorolț
+Foieni
+Gherța Mică
+Halmeu
+Hodod
+Homoroade
+Lazuri
+Livada
+Medieșu Aurit
+Micula
+Moftin
+Negrești-Oaș
+Odoreu
+Orașu Nou
+Păulești
+Petrești
+Pir
+Pișcolt
+Pomi
+Porumbești
+Racșa
+Săcășeni
+Sanislău
+Santău
+Satu Mare
+Săuca
+Socond
+Supur
+Tarna Mare
+Târșolț
+Tășnad
+Terebești
+Tiream
+Turț
+Turulung
+Urziceni
+Valea Vinului
+Vama
+Vetiș
+Viile Satu Mare
+-- Satu Mare --
+
+-- Sibiu --
+Agnita
+Alma
+Alțâna
+Apoldu de Jos
+Arpașu de Jos
+Ațel
+Avrig
+Axente Sever
+Bârghiș
+Bazna
+Biertan
+Blăjel
+Boița
+Brădeni
+Brateiu
+Bruiu
+Cârța
+Cârțișoara
+Chirpăr
+Cisnădie
+Copșa Mică
+Cristian
+Dârlos
+Dumbrăveni
+Gura Râului
+Hoghilag
+Iacobeni
+Jina
+Laslea
+Loamneș
+Ludoș
+Marpod
+Mediaș
+Merghindeal
+Micăsasa
+Miercurea Sibiului
+Mihăileni
+Moșna
+Nocrich
+Ocna Sibiului
+Orlat
+Păuca
+Poiana Sibiului
+Poplaca
+Porumbacu de Jos
+Racovița
+Rășinari
+Râu Sadului
+Roșia
+Sadu
+Săliște
+Șeica Mare
+Șeica Mică
+Șelimbăr
+Sibiu
+Slimnic
+Șura Mare
+Șura Mică
+Tălmaciu
+Târnava
+Tilișca
+Turnu Roșu
+Valea Viilor
+Vurpăr
+-- Sibiu --
+
+-- Suceava --
+Adâncata
+Arbore
+Baia
+Bălăceana
+Bălcăuți
+Berchișești
+Bilca
+Bogdănești
+Boroaia
+Bosanci
+Botoșana
+Breaza
+Brodina
+Broșteni
+Bunești
+Burla
+Cacica
+Cajvana
+Calafindești
+Câmpulung Moldovenesc
+Capu Câmpului
+Cârlibaba
+Ciocănești
+Ciprian Porumbescu
+Comănești
+Cornu Luncii
+Coșna
+Crucea
+Dărmănești
+Dolhasca
+Dolhești
+Dorna-Arini
+Dorna Candrenilor
+Dornești
+Drăgoiești
+Drăgușeni
+Dumbrăveni
+Fălticeni
+Fântâna Mare
+Fântânele
+Forăști
+Frasin
+Frătăuții Noi
+Frătăuții Vechi
+Frumosu
+Fundu Moldovei
+Gălănești
+Grămești
+Grănicești
+Gura Humorului
+Hănțești
+Hârtop
+Horodnic de Jos
+Horodnic de Sus
+Horodniceni
+Iacobeni
+Iaslovăț
+Ilișești
+Ipotești
+Izvoarele Sucevei
+Liteni
+Mălini
+Mănăstirea Humorului
+Marginea
+Milișăuți
+Mitocu Dragomirnei
+Moara
+Moldova-Sulița
+Moldovița
+Mușenița
+Ostra
+Păltinoasa
+Panaci
+Pârteștii de Jos
+Pătrăuți
+Poiana Stampei
+Poieni-Solca
+Pojorâta
+Preutești
+Putna
+Rădășeni
+Rădăuți
+Râșca
+Sadova
+Salcea
+Șaru Dornei
+Satu Mare
+Șcheia
+Șerbăuți
+Siminicea
+Siret
+Slatina
+Solca
+Straja
+Stroiești
+Stulpicani
+Suceava
+Sucevița
+Todirești
+Udești
+Ulma
+Vadu Moldovei
+Valea Moldovei
+Vama
+Vatra Dornei
+Vatra Moldoviței
+Verești
+Vicovu de Jos
+Vicovu de Sus
+Voitinel
+Volovăț
+Vulturești
+Zamostea
+Zvoriștea
+-- Suceava --
+
+-- Teleorman --
+Alexandria
+Băbăița
+Balaci
+Beciu
+Beuca
+Blejești
+Bogdana
+Botoroaga
+Bragadiru
+Brânceni
+Bujoreni
+Bujoru
+Buzescu
+Călinești
+Călmățuiu
+Călmățuiu de Sus
+Cervenia
+Ciolănești
+Ciuperceni
+Conțești
+Cosmești
+Crângeni
+Crângu
+Crevenicu
+Didești
+Dobrotești
+Dracea
+Drăcșenei
+Drăgănești de Vede
+Drăgănești-Vlașca
+Fântânele
+Frăsinet
+Frumoasa
+Furculești
+Gălăteni
+Gratia
+Islaz
+Izvoarele
+Lisa
+Lița
+Lunca
+Măgura
+Măldăeni
+Mârzănești
+Mavrodin
+Mereni
+Moșteni
+Nanov
+Năsturelu
+Necșești
+Nenciulești
+Olteni
+Orbeasca
+Peretu
+Piatra
+Pietroșani
+Plopii-Slăvitești
+Plosca
+Poeni
+Poroschia
+Purani
+Putineiu
+Rădoiești
+Răsmirești
+Roșiorii de Vede
+Săceni
+Saelele
+Salcia
+Sârbeni
+Scrioaștea
+Scurtu Mare
+Seaca
+Segarcea-Vale
+Sfințești
+Siliștea
+Siliștea Gumești
+Slobozia Mândra
+Smârdioasa
+Stejaru
+Ștorobăneasa
+Suhaia
+Talpa
+Tătărăștii de Jos
+Tătărăștii de Sus
+Țigănești
+Traian
+Trivalea-Moșteni
+Troianul
+Turnu Măgurele
+Uda-Clocociov
+Vârtoape
+Vedea
+Videle
+Viișoara
+Vitănești
+Zâmbreasca
+Zimnicea
+-- Teleorman --
+
+-- Timiș --
+Balinț
+Banloc
+Bara
+Bârna
+Beba Veche
+Becicherecu Mic
+Belinț
+Bethausen
+Biled
+Birda
+Bogda
+Boldur
+Brestovăț
+Bucovăț
+Buziaș
+Cărpiniș
+Cenad
+Cenei
+Checea
+Chevereșu Mare
+Ciacova
+Comloșu Mare
+Coșteiu
+Criciova
+Curtea
+Darova
+Denta
+Deta
+Dudeștii Noi
+Dudeștii Vechi
+Dumbrava
+Dumbrăvița
+Făget
+Fârdea
+Fibiș
+Foeni
+Gătaia
+Gavojdia
+Ghilad
+Ghiroda
+Ghizela
+Giarmata
+Giera
+Giroc
+Giulvăz
+Gottlob
+Iecea Mare
+Jamu Mare
+Jebel
+Jimbolia
+Lenauheim
+Liebling
+Livezile
+Lovrin
+Lugoj
+Mănăștiur
+Margina
+Mașloc
+Moravița
+Moșnița Nouă
+Nădrag
+Nițchidorf
+Ohaba Lungă
+Orțișoara
+Otelec
+Pădureni
+Parța
+Peciu Nou
+Periam
+Pesac
+Pietroasa
+Pișchia
+Racovița
+Recaș
+Remetea Mare
+Săcălaz
+Sacoșu Turcesc
+Șag
+Sânandrei
+Șandra
+Sânmihaiu Român
+Sânnicolau Mare
+Sânpetru Mare
+Saravale
+Satchinez
+Secaș
+Știuca
+Teremia Mare
+Timișoara
+Tomești
+Tomnatic
+Topolovățu Mare
+Tormac
+Traian Vuia
+Uivar
+Vălcani
+Variaș
+Victor Vlad Delamarina
+Voiteg
+-- Timiș --
+
+-- Tulcea --
+Babadag
+Baia
+Beidaud
+Beștepe
+Carcaliu
+C.A. Rosetti
+Casimcea
+Ceamurlia de Jos
+Ceatalchioi
+Cerna
+Chilia Veche
+Ciucurova
+Crișan
+Dăeni
+Dorobanțu
+Frecăței
+Greci
+Grindu
+Hamcearca
+Horia
+I. C. Brătianu
+Isaccea
+Izvoarele
+Jijila
+Jurilovca
+Luncavița
+Măcin
+Mahmudia
+Maliuc
+Mihai Bravu
+Mihail Kogălniceanu
+Murighiol
+Nalbant
+Niculițel
+Nufăru
+Ostrov
+Pardina
+Peceneaga
+Sarichioi
+Sfântu Gheorghe
+Slava Cercheză
+Smârdan
+Somova
+Stejaru
+Sulina
+Topolog
+Tulcea
+Turcoaia
+Văcăreni
+Valea Nucarilor
+Valea Teilor
+-- Tulcea --
+
+-- Vâlcea --
+Alunu
+Amărăști
+Băbeni
+Băile Govora
+Băile Olănești
+Bălcești
+Bărbătești
+Berbești
+Berislăvești
+Boișoara
+Brezoi
+Budești
+Bujoreni
+Bunești
+Câineni
+Călimănești
+Cernișoara
+Copăceni
+Costești
+Crețeni
+Dăești
+Dănicei
+Diculești
+Drăgășani
+Drăgoești
+Fârtățești
+Făurești
+Frâncești
+Galicea
+Ghioroiu
+Glăvile
+Golești
+Grădiștea
+Gușoeni
+Horezu
+Ionești
+Lăcusteni
+Lădești
+Laloșu
+Lăpușata
+Livezi
+Lungești
+Măciuca
+Mădulari
+Malaia
+Măldărești
+Mateești
+Mihăești
+Milcoiu
+Mitrofani
+Muereasca
+Nicolae Bălcescu
+Ocnele Mari
+Olanu
+Orlești
+Oteșani
+Păușești
+Păușești-Măglași
+Perișani
+Pesceana
+Pietrari
+Popești
+Prundeni
+Racovița
+Râmnicu Vâlcea
+Roești
+Roșiile
+Runcu
+Sălătrucel
+Scundu
+Sinești
+Șirineasa
+Slătioara
+Stănești
+Ștefănești
+Stoenești
+Stoilești
+Stroești
+Șușani
+Sutești
+Tetoiu
+Titești
+Tomșani
+Vaideeni
+Valea Mare
+Vlădești
+Voicești
+Voineasa
+Zătreni
+-- Vâlcea --
+
+-- Vaslui --
+Albești
+Alexandru Vlahuță
+Arsura
+Băcani
+Băcești
+Bălteni
+Banca
+Bârlad
+Berezeni
+Blăgești
+Bogdana
+Bogdănești
+Bogdănița
+Boțești
+Bunești-Averești
+Ciocani
+Codăești
+Coroiești
+Costești
+Cozmești
+Crețești
+Dănești
+Deleni
+Delești
+Dimitrie Cantemir
+Dodești
+Dragomirești
+Drânceni
+Duda-Epureni
+Dumești
+Epureni
+Fălciu
+Ferești
+Fruntișeni
+Găgești
+Gârceni
+Gherghești
+Grivița
+Hoceni
+Huși
+Iana
+Ibănești
+Ivănești
+Ivești
+Laza
+Lipovăț
+Lunca Banului
+Mălușteni
+Miclești
+Muntenii de Jos
+Muntenii de Sus
+Murgeni
+Negrești
+Oltenești
+Oșești
+Pădureni
+Perieni
+Pochidia
+Pogana
+Pogonești
+Poienești
+Puiești
+Pungești
+Pușcași
+Rafaila
+Rebricea
+Roșiești
+Solești
+Stănilești
+Ștefan cel Mare
+Șuletea
+Tăcuta
+Tanacu
+Tătărăni
+Todirești
+Tutova
+Văleni
+Vaslui
+Vetrișoaia
+Viișoara
+Vinderei
+Voinești
+Vulturești
+Vutcani
+Zăpodeni
+Zorleni
+-- Vaslui --
+
+-- Vrancea --
+Adjud
+Andreiașu de Jos
+Bălești
+Bârsești
+Biliești
+Boghești
+Bolotești
+Bordești
+Broșteni
+Câmpineanca
+Câmpuri
+Cârligele
+Chiojdeni
+Ciorăști
+Corbița
+Cotești
+Dumbrăveni
+Dumitrești
+Fitionești
+Focșani
+Garoafa
+Golești
+Gologanu
+Gugești
+Gura Caliței
+Homocea
+Jariștea
+Jitia
+Măicănești
+Mărășești
+Mera
+Milcovul
+Movilița
+Nănești
+Năruja
+Negrilești
+Nereju
+Nistorești
+Obrejița
+Odobești
+Paltin
+Panciu
+Păulești
+Păunești
+Ploscuțeni
+Poiana Cristei
+Popești
+Pufești
+Răcoasa
+Răstoaca
+Reghiu
+Ruginești
+Sihlea
+Slobozia Bradului
+Slobozia Ciorăști
+Soveja
+Spulber
+Străoane
+Suraia
+Tâmboești
+Tănăsoaia
+Tătăranu
+Țifești
+Tulnici
+Urechești
+Valea Sării
+Vânători
+Vârteșcoiu
+Vidra
+Vintileasca
+Vizantea-Livezi
+Vrâncioaia
+Vulturu
+-- Vrancea --
